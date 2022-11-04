@@ -44,7 +44,67 @@ img {
 }
 
 /*=============== CARD ===============*/
+.container{
+  height: 100vh;
+  margin-inline: 1.5rem;
+  display: grid;
+  place-items: center;
+}
 
+.card{
+  position: relative;
+  width: 256px;
+  background-color: var(--black-color);
+  padding: 1.25rem 2rem 3rem;
+  border-radius: 1.5rem;
+  text-align: center;
+  box-shadow: 0 4px 16px hsla(29, 75%, 8%, .2); 
+}
+
+.card__img{
+  width: 100px;
+  border-radius: 10%;
+}
+
+.card__border{
+  width: 115px;
+  height: 85px;
+  border: 2px solid var(--first-color);
+  border-radius: 10%;
+  display: grid;
+  place-items: center;
+  margin: 0 auto .75rem
+}
+
+.card__name{
+  color: var(--first-color);
+  font-size: var(--h3-font-size);
+  font-weight: 500;
+}
+
+.card__profession{
+  color: var(--text-color);
+  font-size: var(--smaller-font-size);
+  font-weight: 500;
+}
+
+.card__social{
+  width: 200px;
+  background-color: var(--first-color);
+  padding: .75rem;
+  border-radius: 3rem;
+  text-align: initial;
+  box-shadow: 0 8px 24px hsla(29, 75%, 56%, .3);
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1.75rem;
+  margin: auto;
+}
+
+.card__social-control{
+  
+}
 
 /* Rotate social */
 
