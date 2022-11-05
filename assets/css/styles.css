@@ -5,11 +5,15 @@
 :root {
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
-  --first-color: hsl(29, 80%, 58%);
-  --first-color-light: hsl(29, 80%, 70%);
-  --black-color: hsl(29, 16%, 10%);
-  --text-color: hsl(29, 8%, 65%);
-  --body-color: hsl(29, 100%, 99%);
+  --first-hue: 174;
+  --sat: 63%;
+  --lig: 62%;
+  --second-hue: 219;
+  --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
+  --first-color-light: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
+  --black-color: hsl(var(--second-hue), 32%, 12%);
+  --text-color: hsl(var(--second-hue), 4%, 55%);
+  --body-color: hsl(var(--second-hue), 48%, 8%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -58,7 +62,7 @@ img {
   padding: 1.25rem 2rem 3rem;
   border-radius: 1.5rem;
   text-align: center;
-  box-shadow: 0 4px 16px hsla(29, 75%, 8%, .2); 
+  box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
 }
 
 .card__img{
@@ -94,7 +98,7 @@ img {
   padding: .75rem;
   border-radius: 3rem;
   text-align: initial;
-  box-shadow: 0 8px 24px hsla(29, 75%, 56%, .3);
+  box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), .4);
   position: absolute;
   left: 0;
   right: 0;
